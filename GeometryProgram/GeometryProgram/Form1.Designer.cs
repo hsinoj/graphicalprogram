@@ -50,7 +50,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("OCR A Extended", 18F);
-            this.label1.Location = new System.Drawing.Point(91, 126);
+            this.label1.Location = new System.Drawing.Point(91, 147);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(236, 25);
             this.label1.TabIndex = 3;
@@ -60,7 +60,7 @@
             // 
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pictureBox1.Image = global::GeometryProgram.Properties.Resources.metry;
-            this.pictureBox1.Location = new System.Drawing.Point(96, 29);
+            this.pictureBox1.Location = new System.Drawing.Point(96, 52);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(220, 83);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -77,6 +77,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.ForeColor = System.Drawing.SystemColors.ActiveBorder;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

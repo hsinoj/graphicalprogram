@@ -36,13 +36,15 @@
             this.stop = new System.Windows.Forms.Button();
             this.pause = new System.Windows.Forms.Button();
             this.run = new System.Windows.Forms.Button();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fileToolStripMenuItem});
+            this.fileToolStripMenuItem,
+            this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(919, 24);
@@ -61,14 +63,14 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.saveToolStripMenuItem.Text = "Save";
             this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // loadToolStripMenuItem
             // 
             this.loadToolStripMenuItem.Name = "loadToolStripMenuItem";
-            this.loadToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.loadToolStripMenuItem.Size = new System.Drawing.Size(100, 22);
             this.loadToolStripMenuItem.Text = "Load";
             this.loadToolStripMenuItem.Click += new System.EventHandler(this.loadToolStripMenuItem_Click);
             // 
@@ -101,7 +103,7 @@
             this.pause.FlatAppearance.BorderSize = 0;
             this.pause.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pause.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.pause.Location = new System.Drawing.Point(43, 0);
+            this.pause.Location = new System.Drawing.Point(80, 0);
             this.pause.Name = "pause";
             this.pause.Size = new System.Drawing.Size(46, 23);
             this.pause.TabIndex = 7;
@@ -118,13 +120,19 @@
             this.run.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Black;
             this.run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.run.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.run.Location = new System.Drawing.Point(43, 0);
+            this.run.Location = new System.Drawing.Point(80, 0);
             this.run.Name = "run";
             this.run.Size = new System.Drawing.Size(40, 24);
             this.run.TabIndex = 3;
             this.run.Text = "Stop";
             this.run.UseVisualStyleBackColor = false;
             this.run.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
             // 
             // eometry_Design
             // 
@@ -158,5 +166,6 @@
         private System.Windows.Forms.Button stop;
         private System.Windows.Forms.Button pause;
         private System.Windows.Forms.Button run;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
     }
 }

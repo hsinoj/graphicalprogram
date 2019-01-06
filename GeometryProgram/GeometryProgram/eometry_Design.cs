@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.IO;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace GeometryProgram
 {
@@ -16,7 +17,10 @@ namespace GeometryProgram
         public eometry_Design()
         {
             InitializeComponent();
+            
         }
+       
+        
 
         private void eometry_Design_Load(object sender, EventArgs e)
         {
@@ -42,13 +46,26 @@ namespace GeometryProgram
             pause.FlatAppearance.BorderColor = Color.FromArgb(0, 255, 255, 255); //transparent
             pause.Visible = false;
             run.Visible = true;
+
+            string text = edit.Text;
+            string[] space = text.Split(','  ,';' , '\t'); //spliting string with different escape sequence
+      
+            if(space[0].Equals("DrawTo")) //parsing the command
+            {
+                MessageBox.Show(space[0]);
+            }
+            else
+            {
+                MessageBox.Show("error");
+            }
+            
+
         }
 
         private async void saveToolStripMenuItem_Click(object sender, EventArgs e)
         {
             SaveFileDialog sfd = new SaveFileDialog();//creating a instance of a dialog box
             sfd.Filter = "txt files (*.txt)|*.txt|All files (*.*)|*.*"; //creting text form
-            sfd.FilterIndex = 2;
             sfd.RestoreDirectory = true;
 
             if (sfd.ShowDialog() == DialogResult.OK)//if choose data is fine then enter todialog box
